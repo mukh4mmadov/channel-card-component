@@ -1,0 +1,146 @@
+@font-face {
+  font-display: swap;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/montserrat-v26-latin-500.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/montserrat-v26-latin-700.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/fraunces-v31-latin-700.woff2") format("woff2");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  object-fit: cover;
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 23px;
+  background-color: #f2eae2;
+}
+
+main {
+  flex-grow: 1;
+}
+
+h1 {
+  margin: 0;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: 450px;
+}
+
+.card__info {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 32px;
+}
+.card__brand {
+  font-size: 12px;
+  line-height: 14.63px;
+  letter-spacing: 5px;
+  color: #6c7289;
+  margin-bottom: 20px;
+}
+.card__name {
+  width: 236px;
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 32px;
+  color: #1c232b;
+  margin-bottom: 24px;
+}
+.card__description {
+  width: 237px;
+  color: #6c7289;
+  margin-bottom: 29px;
+}
+.card__price {
+  display: flex;
+  align-items: center;
+  gap: 19px;
+  margin-bottom: 30px;
+}
+.card__price_discount {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 32px;
+  color: #3d8168;
+}
+.card__price__org {
+  font-size: 13px;
+  color: #6c7289;
+}
+.card__btn {
+  padding: 15px 62px;
+  background-color: #3d8168;
+  display: flex;
+  align-items: center;
+  gap: 11.61px;
+  border-radius: 8px;
+  
+  &:hover {
+    background-color: #1A4032;
+    transition: 0.3s;
+  }
+
+  &:active {
+    opacity: 60%;
+  }
+}
+
+.card__btn_text {
+  font-weight: 700;
+  line-height: 17.07px;
+  color: #fff;
+}
